@@ -1,11 +1,13 @@
 # California Housing
 
 ## Source
+
 This dataset is a modified version of the California Housing dataset available from [Luís Torgo's page](http://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html) (University of Porto). Luís Torgo obtained it from the StatLib repository (which is closed now). The dataset may also be downloaded from StatLib mirrors.
 
 This dataset appeared in a 1997 paper titled *Sparse Spatial Autoregressions* by Pace, R. Kelley and Ronald Barry, published in the *Statistics and Probability Letters* journal. They built it using the 1990 California census data. It contains one row per census block group. A block group is the smallest geographical unit for which the U.S. Census Bureau publishes sample data (a block group typically has a population of 600 to 3,000 people).
 
 ## Tweaks
+
 The dataset in this directory is almost identical to the original, with two differences:
 
 * 207 values were randomly removed from the `total_bedrooms` column, so we can discuss what to do with missing data.
@@ -50,7 +52,7 @@ Note that the block groups are called "districts" in the Jupyter notebooks, simp
     50%     -118.510000     34.260000           29.000000   2119.000000   
     75%     -118.010000     37.720000           37.000000   3141.000000   
     max     -114.310000     41.950000           52.000000  39320.000000   
-
+    
            total_bedrooms    population    households  median_income  
     count    16355.000000  16513.000000  16513.000000   16513.000000  
     mean       534.885112   1419.525465    496.975050       3.875651  
@@ -60,4 +62,3 @@ Note that the block groups are called "districts" in the Jupyter notebooks, simp
     50%        433.000000   1164.000000    408.000000       3.541400  
     75%        644.000000   1718.000000    602.000000       4.745000  
     max       6210.000000  35682.000000   5358.000000      15.000100
- 
